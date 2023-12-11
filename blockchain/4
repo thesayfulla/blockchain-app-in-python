@@ -1,0 +1,9 @@
+{
+    "borrower": "sayfulla",
+    "lender": "abdulla",
+    "amount": "10",
+    "prev_block": {
+        "hash": "92f70ce93d8cc26e01d4e9ebd2eb23b7",
+        "filename": "3"
+    }
+}
