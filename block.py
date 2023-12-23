@@ -3,7 +3,6 @@ import json
 import hashlib
 from typing import NoReturn
 
-
 BLOCKCHAIN_DIR = "blockchain/"
 
 
@@ -32,7 +31,7 @@ def check_integrity() -> list[dict]:
 
         print(f"Block {prev_filename}: {res}")
         results.append({'block': prev_filename, 'result': res})
-    
+
     return results
 
 
@@ -51,12 +50,3 @@ def write_block(borrower: str, lender: str, amount: int) -> NoReturn:
     with open(current_block, "w") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
         f.write("\n")
-
-
-def main():
-    # write_block("Kate", "Linda", 100)
-    check_integrity()
-
-
-if __name__ == "__main__":
-    main()
